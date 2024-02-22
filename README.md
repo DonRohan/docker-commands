@@ -77,16 +77,46 @@ docker rmi <image_id or image_name>
 docker-compose up -d
 ```
 
+### Start a specific container of a Docker-Compose in detached mode
+
+```bash
+docker-compose up <container_id or container_name> -d
+```
+
 ### Shut a Docker-Compose dwon
 
 ```bash
 docker-compose down
 ```
 
+### Shut a specific container of a Docker-Compose dwon
+
+```bash
+docker-compose down <container_id or container_name>
+```
+
+### Restart all containers of a Docker-Compose
+
+```bash
+docker-compose restart
+```
+
+### Restart a specific container of a Docker-Compose
+
+```bash
+docker-compose restart <container_id or container_name>
+```
+
 ### Build all containers of a Docker-Compose
 
 ```bash
 docker-compose build
+```
+
+### Build a specific container of a Docker-Compose
+
+```bash
+docker-compose build <container_id or container_name>
 ```
 
 ## Docker System
