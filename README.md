@@ -31,6 +31,18 @@ docker stop <container_id or container_name>
 docker rm <container_id or container_name>
 ```
 
+### Stop all Docker Containers
+
+```bash
+docker stop $(docker ps -a -q)
+```
+
+### Remove all stopped Docker Containers
+
+```bash
+docker rm $(docker ps -a -q)
+```
+
 ### Show the logs of a specific Container
 
 ```bash
